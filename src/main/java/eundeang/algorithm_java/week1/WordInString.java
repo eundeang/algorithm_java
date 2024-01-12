@@ -8,9 +8,7 @@ public class WordInString {
         String[] word = st.split(" ");
         int longest = 0;
         for (String s : word){
-            if (longest == s.length()){
-                result = word[0];
-            }else if(longest < s.length()) {
+             if(longest < s.length()) {
                 longest = s.length();
                 result = s;
             }
